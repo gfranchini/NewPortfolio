@@ -16,4 +16,8 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    @copyright = DigistroViewTool::Renderer.copyright('Giancarlo Franchini', 'All rights reserved')
+  end
+
 end
